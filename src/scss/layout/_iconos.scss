@@ -1,6 +1,8 @@
-@include tablet {
+@use "../base/mixins";
+
+@include mixins.tablet {
     .iconos-nosotros {
-        @include grid(3, 2rem);
+        @include mixins.grid(3, 2rem);
     }
 }
 .icono {

@@ -1,13 +1,15 @@
+@use "../base/variables";
+
 .footer {
-    padding: $separacion/2 0;
-    background-color: $grisOscuro;
+    padding: variables.$separacion*0.5 0;
+    background-color: variables.$grisOscuro;
 
     .contenedor-footer {
-        padding-top: $separacion / 2;
+        padding-top: variables.$separacion * 0.5;
     }
 
     .copyright {
-        color: $blanco;
+        color: variables.$blanco;
         text-align: center;
     }
 }
