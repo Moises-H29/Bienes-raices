@@ -2,6 +2,10 @@
 @use "../base/variables" as v;
 
 .boton-amarillo {
+    @include mix.boton(v.$amarillo, inline-block);
+}
+
+.boton-amarillo-block {
     @include mix.boton(v.$amarillo, block);
     text-transform: uppercase;
 }
