@@ -1,0 +1,11 @@
+@use "../base/mixins" as mix;
+@use "../base/variables" as v;
+
+.boton-amarillo {
+    @include mix.boton(v.$amarillo, block);
+    text-transform: uppercase;
+}
+
+.boton-verde {
+    @include mix.boton(v.$verde, inline-block);
+}
