@@ -5,6 +5,11 @@
     margin-bottom: 0;
     background-color: variables.$grisOscuro;
 
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+    }
+
     .contenedor-footer {
         padding-top: variables.$separacion * 0.5;
     }

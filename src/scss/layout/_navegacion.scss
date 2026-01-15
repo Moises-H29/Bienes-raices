@@ -1,6 +1,32 @@
 @use "../base/mixins" as mix;
 @use "../base/variables";
 
+.derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mix.tablet {
+        align-items: flex-end;
+    }
+
+    .dark-mode-boton {
+        width: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        filter: invert(100%);
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include mix.tablet {
+            margin-top: 0;
+        }
+    }
+
+}
+
 .barra {
     display: flex;
     flex-direction: column;
@@ -9,6 +35,8 @@
     @include mix.tablet {
         flex-direction: row;
         justify-content: space-between;
+
+        align-items: flex-end;
     }
 }
 

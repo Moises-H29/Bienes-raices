@@ -1,0 +1,32 @@
+@use '../base/mixins' as mix;
+@use '../base/variables' as v;
+@use "sass:color";
+
+
+.dark-mode {
+    background-color: color.adjust($color: v.$grisOscuro, $lightness : -10%);
+
+    p {
+        color: v.$blanco;
+    }
+
+    a,h1,h2,h3,h4 {
+        color: v.$gris;
+    }
+
+    .anuncio {
+        background-color: v.$grisOscuro;
+        border: 1px solid v.$grisOscuro;
+
+        .precio {
+            color: v.$verde;
+        }
+
+        .icono {
+            filter: invert(100%);
+        }
+    }
+
+    
+
+}
