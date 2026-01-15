@@ -8,10 +8,11 @@
     .navegacion {
         visibility: visible;
         opacity: 1;
+        height: auto;
     }
 
     .contenedor-footer {
-        padding-top: variables.$separacion * 0.3;
+        padding-top: variables.$separacion * 0.5;
     }
 
     .copyright {
